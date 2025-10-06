@@ -1,0 +1,43 @@
+import rodados.*
+
+describe "Corsa" {
+ const corsita = new Corsa(color=rojo)
+
+  test "su capacidad" {
+    assert.equals(4, corsita.capacidad())
+  }
+
+  test "su color" {
+    assert.equals(rojo, corsita.color())
+  }
+}
+
+describe "Probar UN Kwid" {
+const kwidcito = new Kwid(tieneTanqueAdicional = false)
+const kwidcitoCon = new Kwid(tieneTanqueAdicional = true)
+  test "peso del kwid sin tanque ad." {
+    assert.equals(1200, kwidcito.peso())
+    assert.equals(1350, kwidcitoCon.peso())
+  }
+  test "capacidad del kwidcito"{
+    assert.equals(4, kwidcito.capacidad())
+    assert.equals(3, kwidcitoCon.capacidad())
+  }
+
+  test "velocidad del kwidcito"{
+    assert.equals(110, kwidcito.velocidad())
+    assert.equals(120, kwidcitoCon.velocidad())
+  }
+}
+
+describe "la traffic"{
+    test "capacidad traffic popular" {
+      traffic.asignarInterior(popular)
+      assert.equals(12, traffic.capacidad())     
+    }
+    test "capacidad traffic comoda" {
+      traffic.asignarInterior(comodo)
+      assert.equals(5, traffic.capacidad())     
+    }
+}
+
