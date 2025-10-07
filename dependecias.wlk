@@ -1,8 +1,10 @@
 import rodados.*
 
-class Dependecia {
-    const rodados = []
+class Dependencia {
     const cantidadEmpleados
+
+    const rodados = []
+    
 
     method agregarAFlota(rodado) {
         rodados.add(rodado)

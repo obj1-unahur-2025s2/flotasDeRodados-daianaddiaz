@@ -1,0 +1,11 @@
+import dependecias.*
+import rodados.*
+describe "test dependencias" {
+
+    const deportes = new Dependencia(cantidadEmpleados = 45)
+    const cultura = new Dependencia(cantidadEmpleados = 31)
+    const cachito = new Corsa(color=rojo)
+  test "test de flota de deportes" {
+    
+  }
+}
